@@ -1,23 +1,34 @@
 {
-  "name": "HTML Landing Page",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "name": "React Development",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
   "features": {},
-  "forwardPorts": [5500],
+  "forwardPorts": [5173, 3000],
   "customizations": {
     "vscode": {
       "settings": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "files.autoSave": "afterDelay",
-        "workbench.iconTheme": "material-icon-theme"
+        "workbench.iconTheme": "material-icon-theme",
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit"
+        },
+        "[javascriptreact]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescriptreact]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
       },
       "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "dsznajder.es7-react-js-snippets",
         "formulahendry.auto-rename-tag",
-        "zignd.html-css-class-completion",
-        "ritwickdey.liveserver",
         "pkief.material-icon-theme",
-        "esbenp.prettier-vscode"
+        "bradlc.vscode-tailwindcss"
       ]
     }
-  }
+  },
+  "postCreateCommand": "npm install"
 }
