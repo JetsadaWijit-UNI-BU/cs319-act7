@@ -1,0 +1,23 @@
+{
+  "name": "HTML Landing Page",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {},
+  "forwardPorts": [5500],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "files.autoSave": "afterDelay",
+        "workbench.iconTheme": "material-icon-theme"
+      },
+      "extensions": [
+        "formulahendry.auto-rename-tag",
+        "zignd.html-css-class-completion",
+        "ritwickdey.liveserver",
+        "pkief.material-icon-theme",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
